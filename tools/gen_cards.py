@@ -24,11 +24,14 @@ ICONS = {
     "nozzle": '<rect x="-22" y="-34" width="44" height="30" rx="6" fill="none" stroke="{c}" stroke-width="3"/>'
               '<path d="M-10 -4 H10 L4 12 H-4 Z" fill="{c}"/><path d="M-30 30 H30" stroke="{c}" stroke-width="3"/>'
               '<path d="M-22 24 H22" stroke="{c}" stroke-width="3" opacity="0.6"/>',
+    "book": '<path d="M0 -26 C-12 -34 -26 -34 -36 -28 V30 C-26 24 -12 24 0 32 C12 24 26 24 36 30 V-28 C26 -34 12 -34 0 -26 Z" fill="none" stroke="{c}" stroke-width="3" stroke-linejoin="round"/>'
+            '<path d="M0 -26 V32" stroke="{c}" stroke-width="3"/><path d="M-26 -14 H-10 M-26 -2 H-10 M10 -14 H26 M10 -2 H26" stroke="{c}" stroke-width="2.5" stroke-linecap="round"/>',
     "spark": '<path d="M0 -36 C4 -10 10 -4 36 0 C10 4 4 10 0 36 C-4 10 -10 4 -36 0 C-10 -4 -4 -10 0 -36 Z" fill="{c}"/>'
              '<circle cx="26" cy="-26" r="4" fill="{c}"/>',
 }
 
 CARDS = [
+    ("00", "Learn the Basics", "New to 3D? Start here", "FDM · filaments · glossary · fixes", "book", "#22D3EE", "#B26BFF"),
     ("01", "Workshop Setup", "The ₹20L blueprint", "Printers · PCs · space · team", "cube", "#FF6B1A", "#FF3D7F"),
     ("02", "Pricing Model", "Quote like a pro", "₹130–180 per FDM hour", "rupee", "#FFC145", "#FF6B1A"),
     ("03", "Break-even", "When money comes back", "~₹2.3L/month · month 8", "chart", "#3DDC97", "#22D3EE"),

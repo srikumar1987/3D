@@ -17,6 +17,8 @@
 <p align="center">
   <a href="https://srikumar1987.github.io/3D/"><b>Open the interactive site →</b></a>
   &nbsp;·&nbsp;
+  <a href="guide/00-learn-basics.md">Learn the basics</a>
+  &nbsp;·&nbsp;
   <a href="#chapters">Chapters</a>
   &nbsp;·&nbsp;
   <a href="#at-a-glance">At a glance</a>
@@ -49,6 +51,9 @@ flowchart LR
 ## Chapters
 
 <table>
+  <tr>
+    <td colspan="2" align="center"><a href="guide/00-learn-basics.md"><img src="assets/cards/00.svg" alt="00 Learn the basics" width="50%"/></a><br/><sub><b>New to 3D printing? Start with chapter 00.</b></sub></td>
+  </tr>
   <tr>
     <td><a href="guide/01-workshop-setup.md"><img src="assets/cards/01.svg" alt="01 Workshop setup" width="100%"/></a></td>
     <td><a href="guide/02-pricing-model.md"><img src="assets/cards/02.svg" alt="02 Pricing model" width="100%"/></a></td>
@@ -177,10 +182,11 @@ gantt
 ```
 3D/
 ├── README.md                 ← you are here
-├── guide/                    ← 8 deep-dive chapters
+├── guide/                    ← 00 Learn the basics + 8 deep-dive chapters
 ├── docs/                     ← interactive website (GitHub Pages)
 │   ├── index.html
 │   ├── styles.css
+│   ├── learn.js              ← Learn section (explorer, glossary, quizzes)
 │   └── app.js
 ├── assets/                   ← hero, divider, chapter cards (SVG)
 └── tools/gen_cards.py        ← regenerates chapter cards

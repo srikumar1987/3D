@@ -4,7 +4,7 @@
 
 > A complete 3D printing service bureau in Bangalore — prototyping, small-batch parts, reverse engineering, miniatures and display models.
 
-[← Back to index](../README.md) · [Next: Pricing model →](02-pricing-model.md)
+[← Learn the basics](00-learn-basics.md) · [Index](../README.md) · [Next: Pricing model →](02-pricing-model.md)
 
 > [!NOTE]
 > All prices are indicative landed costs in India **including 18% GST** (Oct 2026). Always take 2–3 GST-invoiced quotes. If GST-registered, you can reclaim roughly **₹2.5–3L** as Input Tax Credit.
@@ -197,4 +197,4 @@ timeline
     Month 18+   : SLS – Formlabs Fuse 1+ class (₹35–45L)
 ```
 
-[← Back to index](../README.md) · [Next: Pricing model →](02-pricing-model.md)
+[← Learn the basics](00-learn-basics.md) · [Index](../README.md) · [Next: Pricing model →](02-pricing-model.md)

@@ -26,6 +26,7 @@
       <span>3D<b>/</b>Field&nbsp;Guide</span>
     </a>
     <nav class="nav__links" id="navLinks">
+      <a href="#learn">Learn</a>
       <a href="#workshop">Workshop</a>
       <a href="#pricing">Pricing</a>
       <a href="#profit">Profit</a>
@@ -48,7 +49,7 @@
           <p class="lead">Everything you need to build a 3D printing business — what to buy, what to charge, what sells, who to buy from, and where AI fits in.</p>
           <div class="hero__cta">
             <a class="btn btn--primary" href="#workshop">Explore the ₹20L blueprint</a>
-            <a class="btn btn--ghost" href="#pricing">Try the quote calculator</a>
+            <a class="btn btn--ghost" href="#learn">New to 3D? Start here</a>
           </div>
         </div>
         <div class="hero__art reveal" aria-hidden="true">
@@ -79,6 +80,219 @@
         <ol class="journey reveal" id="journey"></ol>
       </div>
     </section>
+
+    <!-- ================================================================ LEARN -->
+    <div class="learn-zone" id="learnZone">
+      <nav class="subnav" id="subnav" aria-label="Learn sections">
+        <div class="subnav__inner">
+          <span class="subnav__tag">LEARN</span>
+          <a href="#learn">Basics</a>
+          <a href="#learn-materials">Materials</a>
+          <a href="#learn-glossary">Glossary</a>
+          <a href="#learn-process">Process</a>
+          <a href="#learn-fix">Troubleshoot</a>
+          <a href="#learn-rules">Dos &amp; don'ts</a>
+          <a href="#learn-path">30-day path</a>
+          <a href="#learn-test">Test</a>
+        </div>
+      </nav>
+
+      <!-- Basics -->
+      <section class="section" id="learn">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">00</span>
+            <div>
+              <p class="eyebrow">Learn · start here</p>
+              <h2>3D printing, from zero</h2>
+              <p class="sub">Two technologies do 95% of the work in a small workshop: <b>FDM</b> melts plastic wire through a nozzle; <b>resin</b> hardens liquid with UV light. Learn how each works, then dive into materials, terms and fixes.</p>
+            </div>
+          </header>
+
+          <div class="tech reveal">
+            <article class="tech__card tech__card--fdm">
+              <div class="mini mini--fdm" aria-hidden="true">
+                <div class="mini-fdm__head"><i></i></div>
+                <div class="mini-fdm__part"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="mini__bed"></div>
+              </div>
+              <p class="eyebrow">Fused Deposition Modelling</p>
+              <h3>FDM</h3>
+              <p>A plastic wire (filament) is melted in a hot nozzle and drawn line by line, layer by layer — like a very precise hot-glue gun.</p>
+              <ul class="tech__facts">
+                <li><span>Best for</span><b>Strong, functional &amp; large parts</b></li>
+                <li><span>Machines</span><b>Bambu P1S · X1C · H2D · K1 Max</b></li>
+                <li><span>Material</span><b>Filament · ₹1–4 / g</b></li>
+              </ul>
+            </article>
+            <article class="tech__card tech__card--resin">
+              <div class="mini mini--resin" aria-hidden="true">
+                <div class="mini-resin__plate"><div class="mini-resin__part"></div></div>
+                <div class="mini-resin__vat"><i></i></div>
+              </div>
+              <p class="eyebrow">SLA · MSLA · DLP</p>
+              <h3>Resin</h3>
+              <p>A tank of liquid resin is hardened one thin layer at a time by UV light from a screen or laser. The part grows upside-down from the build plate.</p>
+              <ul class="tech__facts">
+                <li><span>Best for</span><b>Fine detail &amp; smooth surfaces</b></li>
+                <li><span>Machines</span><b>Elegoo Saturn 4 Ultra · Formlabs Form 4</b></li>
+                <li><span>Material</span><b>Liquid resin · ₹3–20 / ml</b></li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="versus reveal">
+            <div class="versus__legend"><span><i class="vs vs--fdm"></i>FDM</span><span><i class="vs vs--resin"></i>Resin</span></div>
+            <div id="versus"></div>
+            <p class="muted small versus__rule"><b>Rule of thumb:</b> FDM when it must be <b>strong or big</b>; resin when it must be <b>detailed and smooth</b>. Industrial cousins: <b>SLS / MJF</b> (nylon powder) and <b>DMLS</b> (metal powder).</p>
+          </div>
+
+          <h3 class="h3 reveal">Anatomy of an FDM print</h3>
+          <div class="anatomy reveal">
+            <svg id="anatomy" viewBox="0 0 640 320" role="img" aria-label="Cross-section of an FDM print showing walls, infill, top and bottom layers, supports and brim"></svg>
+            <ul class="anatomy__list" id="anatomyList"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Materials -->
+      <section class="section section--alt" id="learn-materials">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">00·1</span>
+            <div>
+              <p class="eyebrow">Learn · materials</p>
+              <h2>Filament &amp; resin explorer</h2>
+              <p class="sub">Each bar is rated 1–5. Filter by what you need, or take the 4-question quiz to get a recommendation.</p>
+            </div>
+          </header>
+          <div class="chips reveal" id="filChips"></div>
+          <div class="fil reveal" id="filGrid"></div>
+
+          <div class="split split--wide">
+            <div class="reveal">
+              <h3 class="h3">Resin types</h3>
+              <div class="resins" id="resinList"></div>
+            </div>
+            <div class="reveal">
+              <h3 class="h3">Which material should I use?</h3>
+              <div class="quiz" id="matQuiz"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Glossary -->
+      <section class="section" id="learn-glossary">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">00·2</span>
+            <div>
+              <p class="eyebrow">Learn · words</p>
+              <h2>A–Z glossary</h2>
+              <p class="sub">Every term you'll hear in a print shop, in plain English.</p>
+            </div>
+          </header>
+          <div class="toolbar reveal">
+            <input class="search" id="glossSearch" type="search" placeholder="Search infill, warping, FEP…" aria-label="Search glossary" />
+            <div class="chips" id="glossChips"></div>
+          </div>
+          <div class="az reveal" id="glossAZ"></div>
+          <div class="gloss reveal" id="glossGrid"></div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="section section--alt" id="learn-process">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">00·3</span>
+            <div>
+              <p class="eyebrow">Learn · workflow</p>
+              <h2>How a print is made</h2>
+              <p class="sub">Seven steps from idea to a part in the customer's hands. Click a step for tips.</p>
+            </div>
+          </header>
+          <div class="steps reveal">
+            <ol class="steps__rail" id="stepRail" role="tablist"></ol>
+            <div class="steps__panel" id="stepPanel" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Troubleshoot -->
+      <section class="section" id="learn-fix">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">00·4</span>
+            <div>
+              <p class="eyebrow">Learn · fixes</p>
+              <h2>Troubleshooting gallery</h2>
+              <p class="sub">The failures every beginner meets — what you'll see, why it happens, and how to fix it.</p>
+            </div>
+          </header>
+          <div class="fix reveal" id="fixGrid"></div>
+        </div>
+      </section>
+
+      <!-- Dos & don'ts + safety -->
+      <section class="section section--alt" id="learn-rules">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">00·5</span>
+            <div>
+              <p class="eyebrow">Learn · rules of the shop</p>
+              <h2>Dos &amp; don'ts</h2>
+              <p class="sub">Hard-won lessons on quality, safety, business and the law.</p>
+            </div>
+          </header>
+          <div class="tabs reveal" role="tablist" id="ruleTabs"></div>
+          <div class="rules reveal" id="ruleGrid"></div>
+
+          <div class="safety reveal">
+            <div class="safety__head">
+              <div>
+                <h3 class="h3">Workshop safety checklist</h3>
+                <p class="muted">Tick what's in place — saved in this browser.</p>
+              </div>
+              <div class="ring" id="safetyRing"><b>0%</b></div>
+            </div>
+            <ul class="checks" id="safetyList"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 30-day path -->
+      <section class="section" id="learn-path">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">00·6</span>
+            <div>
+              <p class="eyebrow">Learn · your plan</p>
+              <h2>30-day learning path</h2>
+              <p class="sub">From first print to first sale. Tick tasks as you go — progress is saved in this browser.</p>
+            </div>
+          </header>
+          <div class="pathbar reveal"><div class="pathbar__fill" id="pathFill"></div><span id="pathLabel">0 / 0 tasks</span></div>
+          <div class="weeks reveal" id="weeks"></div>
+        </div>
+      </section>
+
+      <!-- Test -->
+      <section class="section section--alt" id="learn-test">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">00·7</span>
+            <div>
+              <p class="eyebrow">Learn · check yourself</p>
+              <h2>Test yourself</h2>
+              <p class="sub">Ten questions on everything above. Instant feedback with explanations.</p>
+            </div>
+          </header>
+          <div class="test reveal" id="test"></div>
+        </div>
+      </section>
+    </div>
 
     <!-- WORKSHOP -->
     <section class="section" id="workshop">
@@ -422,6 +636,7 @@
     <p class="footer__sig">Built layer by layer · Bengaluru</p>
   </footer>
 
+  <script src="learn.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
