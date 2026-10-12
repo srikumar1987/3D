@@ -9,9 +9,9 @@
 
   /* ------------------------------------------------------------------ data */
   const BUDGET = [
-    { k: "FDM printers", v: 4.35, c: C.orange },
+    { k: "FDM printers", v: 3.67, c: C.orange },
     { k: "Design PCs & IT", v: 3.85, c: C.cyan },
-    { k: "Resin printers", v: 1.6, c: C.pink },
+    { k: "Resin printers", v: 1.84, c: C.pink },
     { k: "3D scanner", v: 1.4, c: C.violet },
     { k: "Fit-out & furniture", v: 1.6, c: C.blue },
     { k: "Starting materials", v: 1.4, c: C.green },
@@ -19,17 +19,17 @@
     { k: "Software (year 1)", v: 1.3, c: "#5EEAD4" },
     { k: "Power & safety", v: 0.9, c: "#F472B6" },
     { k: "Post-processing & QC", v: 0.75, c: "#A3E635" },
-    { k: "Contingency", v: 1.45, c: C.slate },
+    { k: "Contingency", v: 1.89, c: C.slate },
   ];
 
   const EQUIP = {
     "FDM printers": [
-      { q: "1 ×", n: "Bambu Lab X1 Carbon Combo", d: "Engineering materials (CF-nylon, ASA, PC), multi-colour, best precision. Or current H2-series.", p: 1.7, c: C.orange },
-      { q: "2 ×", n: "Bambu Lab P1S Combo", d: "Production workhorses — PLA, PETG, ABS, multi-colour. Or P2S successor.", p: 1.9, c: C.orange },
-      { q: "1 ×", n: "Creality K1 Max", d: "300 mm³ — large parts, enclosures, cosplay, architecture.", p: 0.75, c: C.orange },
+      { q: "1 ×", n: "Bambu Lab H2S", d: "Engineering materials (ABS, ASA, PA-CF, PC) — 65 °C heated chamber, 350 °C hotend. Replaces the X1C (discontinued Mar 2026).", p: 1.55, c: C.orange },
+      { q: "2 ×", n: "Bambu Lab P1S Combo", d: "Production workhorses — PLA, PETG, ABS, multi-colour. ₹69,999 each; P2S Combo (₹1.03L) is the newer option.", p: 1.4, c: C.orange },
+      { q: "1 ×", n: "Creality K1 Max", d: "300 mm³ — large parts, enclosures, cosplay, architecture. ~₹71,999.", p: 0.72, c: C.orange },
     ],
     "Resin": [
-      { q: "2 ×", n: "Elegoo Saturn 4 Ultra 16K", d: "Miniatures, product models, dental & jewellery masters.", p: 0.96, c: C.pink },
+      { q: "2 ×", n: "Elegoo Saturn 4 Ultra 16K", d: "Miniatures, product models, dental & jewellery masters. ₹59,999–61,499 each.", p: 1.2, c: C.pink },
       { q: "1 ×", n: "Elegoo Mars 5 Ultra", d: "Small, high-detail jobs and test prints.", p: 0.22, c: C.pink },
       { q: "2 ×", n: "Wash & cure stations", d: "Mercury Plus / Anycubic W&C 3 Plus.", p: 0.42, c: C.pink },
     ],
@@ -100,9 +100,9 @@
     { n: "Castable resin", unit: "ml", cost: 20, charge: 40, kind: "resin" },
   ];
   const MACHINES = [
-    { n: "P1S / K1 Max · ₹60/h", rate: 60, cost: 13, kind: "fdm" },
-    { n: "X1C engineering · ₹90/h", rate: 90, cost: 20, kind: "fdm" },
-    { n: "Resin (Saturn) · ₹80/h", rate: 80, cost: 11, kind: "resin" },
+    { n: "P1S / K1 Max · ₹60/h", rate: 60, cost: 11, kind: "fdm" },
+    { n: "H2S engineering · ₹90/h", rate: 90, cost: 19, kind: "fdm" },
+    { n: "Resin (Saturn) · ₹80/h", rate: 80, cost: 12, kind: "resin" },
   ];
   const RATES = [
     ["FDM machine time", "₹60 / h"], ["FDM engineering", "₹90 / h"], ["Resin machine time", "₹80 / h"],
@@ -115,8 +115,8 @@
     { n: "Bambu Lab H2C", t: "Up to 7 swappable nozzles", w: 12, c: C.green, why: "Bambu's tests: ~47–58% of the X1C's purge waste on multi-colour prints." },
     { n: "Bambu Lab H2D", t: "2 independent nozzles", w: 22, c: C.green, why: "Model + support on separate nozzles — PLA + PVA prints that waste 20–40 g on an X1C waste almost nothing." },
     { n: "Resin printers", t: "Saturn 4 Ultra", w: 30, c: "#7CD992", why: "Only supports and failures; leftover resin goes back in the bottle." },
-    { n: "Single-nozzle FDM · 1 colour", t: "P1S / X1C", w: 36, c: "#7CD992", why: "Mostly supports and failed prints." },
-    { n: "Single-nozzle FDM + AMS · many colours", t: "P1S / X1C + AMS", w: 92, c: C.red, why: "1–2 g+ per colour change; can exceed the model's own weight." },
+    { n: "Single-nozzle FDM · 1 colour", t: "A1 / P1S / P2S", w: 36, c: "#7CD992", why: "Mostly supports and failed prints." },
+    { n: "Single-nozzle FDM + AMS · many colours", t: "P1S / P2S + AMS", w: 92, c: C.red, why: "1–2 g+ per colour change; can exceed the model's own weight." },
   ];
   const WASTE_TIPS = ["Fill plates to share one purge tower", "Tree supports", "Flush into infill / objects", "Limit colours per design", "Dry your filament"];
 
@@ -172,10 +172,10 @@
   ];
 
   const CHOOSER = [
-    { k: "Gifts, décor, corporate, toys", s: "General business", r: "Bambu Lab P1S / P2S Combo", p: "~₹0.95L", pts: ["Reliable and easy to learn", "Multi-colour with AMS", "Handles TPU when fed directly"] },
-    { k: "Lots of colours, low waste, slippers", s: "Multi-material", r: "Bambu Lab H2D", p: "~₹2.5–3L", pts: ["Two independent nozzles — near-zero purge for 2 materials", "350 × 320 × 325 mm volume", "Heated chamber for ABS, PA-CF, PC"] },
-    { k: "Rings, jewellery, figurines", s: "Fine detail", r: "Elegoo Saturn 4 Ultra 16K + wash & cure", p: "~₹0.7L", pts: ["16K detail on a budget", "Castable resin for jewellery masters", "Minimal material waste"] },
-    { k: "Not sure yet", s: "Best starter combo", r: "1 × P1S/P2S Combo + 1 × Saturn 4 Ultra", p: "~₹1.5–1.7L", pts: ["Covers ~90% of the products in this guide", "FDM for volume, resin for detail", "Upgrade to H2D when multi-colour orders grow"] },
+    { k: "Gifts, décor, corporate, toys", s: "General business", r: "Bambu Lab P1S Combo", p: "₹69,999 (P2S Combo ₹1.03L)", pts: ["Reliable and easy to learn", "Multi-colour with AMS", "Handles TPU when fed directly"] },
+    { k: "Lots of colours, low waste, slippers", s: "Multi-material", r: "Bambu Lab H2D", p: "From ₹2,19,999", pts: ["Two independent nozzles — near-zero purge for 2 materials", "350 × 320 × 325 mm volume", "Heated chamber for ABS, PA-CF, PC"] },
+    { k: "Rings, jewellery, figurines", s: "Fine detail", r: "Elegoo Saturn 4 Ultra 16K + wash & cure", p: "~₹0.8L", pts: ["16K detail on a budget", "Castable resin for jewellery masters", "Minimal material waste"] },
+    { k: "Not sure yet", s: "Best starter combo", r: "1 × P1S Combo + 1 × Saturn 4 Ultra", p: "~₹1.5L", pts: ["Covers ~90% of the products in this guide", "FDM for volume, resin for detail", "Upgrade to H2D when multi-colour orders grow"] },
   ];
 
   const STACK = [
@@ -198,9 +198,9 @@
     { n: "AI inside CAD", ex: "Fusion generative design · Zoo Text-to-CAD", g: "Lightweight engineering parts", b: "Beginners" },
   ];
   const TIMELINE = [
-    { w: "MONTH 6–9", n: "Formlabs Form 4", d: "₹5–7L · certified dental & industrial resins" },
+    { w: "MONTH 6–9", n: "Formlabs Form 4", d: "~₹6.25L + GST · certified dental & industrial resins" },
     { w: "MONTH 6–9", n: "QuickSurface", d: "₹1.5L/yr · scan-to-CAD reverse engineering" },
-    { w: "MONTH 9–12", n: "Bambu Lab H2D", d: "~₹2.5–3L · low-waste multi-material" },
+    { w: "MONTH 9–12", n: "Bambu Lab H2D", d: "From ₹2.2L · low-waste multi-material" },
     { w: "MONTH 12–18", n: "Industrial scanner", d: "₹10L+ · EinScan HX class for metrology" },
     { w: "MONTH 18+", n: "SLS printer", d: "₹35–45L · Formlabs Fuse 1+ class, nylon parts" },
   ];

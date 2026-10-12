@@ -16,7 +16,7 @@
 | | **FDM** — Fused Deposition Modelling | **Resin** — SLA / MSLA / DLP |
 |---|---|---|
 | **How it works** | Plastic wire (filament) is melted in a hot nozzle and drawn line by line, layer by layer | Liquid resin is hardened layer by layer with UV light; the part grows upside-down |
-| **Machines** | Bambu P1S, X1C, H2D · Creality K1 Max | Elegoo Saturn 4 Ultra · Formlabs Form 4 |
+| **Machines** | Bambu A1, P1S, H2D · Creality K1 Max | Elegoo Saturn 4 Ultra · Formlabs Form 4 |
 | **Finish** | Visible layer lines | Very smooth, fine detail |
 | **Strength** | Strong & functional | More brittle (unless tough resins) |
 | **Size** | Medium–large | Small–medium |

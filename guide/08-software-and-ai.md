@@ -4,7 +4,7 @@
 
 > Tinkercad to learn, Fusion for function, Blender for art — and AI for figurines.
 
-[← Printers & waste](07-printers-and-waste.md) · [Index](../README.md)
+[← Printers & waste](07-printers-and-waste.md) · [Index](../README.md) · [Next: Industry →](09-industry.md)
 
 ---
 
@@ -64,4 +64,4 @@ Perfect for weddings, birthdays and corporate awards.
 > 2. **Copyright still applies** — an AI-generated "Spider-Man" is still infringement.
 > 3. **Expect clean-up** — fix thin walls and fragile parts; check scale before printing.
 
-[← Printers & waste](07-printers-and-waste.md) · [Index](../README.md)
+[← Printers & waste](07-printers-and-waste.md) · [Index](../README.md) · [Next: Industry →](09-industry.md)

@@ -18,8 +18,8 @@
 | Marketing (Google Ads, IndiaMART, Instagram) | 15,000 |
 | Internet, maintenance, misc. | 6,000 |
 | **Cash fixed costs** | **1,60,000** |
-| Depreciation (₹11.2L equipment / 3 yrs — non-cash) | 31,000 |
-| **Total incl. depreciation** | **1,91,000** |
+| Depreciation (~₹10.9L equipment / 3 yrs — non-cash) | 30,000 |
+| **Total incl. depreciation** | **1,90,000** |
 
 **Variable costs ≈ 30% of revenue** (materials ~20%, electricity/consumables/packaging/payment fees ~10%) → **contribution margin ≈ 70%**.
 
@@ -82,7 +82,7 @@ xychart-beta
 | 8 | ₹3.8L | +₹1.06L | **+₹0.43L** |
 
 > [!WARNING]
-> Operating losses peak at **~₹2.1L**, more than the ₹1.45L contingency. Arrange **₹3–5L working capital** (Mudra / CGTMSE / overdraft) or hire the finishing technician only from month 4.
+> Operating losses peak at **~₹2.1L**, still more than the ₹1.89L contingency. Arrange **₹3–5L working capital** (Mudra / CGTMSE / overdraft) or hire the finishing technician only from month 4.
 
 > [!NOTE]
 > **Full capex payback ≈ 20–24 months.** At a steady ₹4.5L/month revenue you clear ~₹1.55L/month. GST input credit on equipment shortens this by ~2 months.

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>3D Printing — From Idea to Industry · Bengaluru Field Guide</title>
-  <meta name="description" content="A visual field guide to starting a 3D printing business in Bangalore: ₹20L workshop, pricing, break-even, suppliers, filaments, market outlook and AI." />
+  <title>Learn 3D Printing — From Idea to Industry · Free Guide (India)</title>
+  <meta name="description" content="A free, visual guide to learn 3D printing and its industry in India: FDM vs resin, materials, glossary, printer and filament prices, vendors, imports, careers and a ₹20L workshop worked example." />
   <meta property="og:title" content="3D Printing — From Idea to Industry" />
   <meta property="og:description" content="₹20L workshop blueprint, pricing calculator, break-even, suppliers and market outlook for India." />
   <meta name="theme-color" content="#0B0D12" />
@@ -27,6 +27,7 @@
     </a>
     <nav class="nav__links" id="navLinks">
       <a href="#learn">Learn</a>
+      <a href="#industry">Industry</a>
       <a href="#workshop">Workshop</a>
       <a href="#pricing">Pricing</a>
       <a href="#profit">Profit</a>
@@ -44,12 +45,12 @@
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="wrap hero__grid">
         <div class="hero__copy reveal">
-          <p class="eyebrow">Field guide · Bengaluru · India</p>
-          <h1>From idea<br/>to <span class="grad">industry.</span></h1>
-          <p class="lead">Everything you need to build a 3D printing business — what to buy, what to charge, what sells, who to buy from, and where AI fits in.</p>
+          <p class="eyebrow">Free learning guide · India · 2026</p>
+          <h1>Learn 3D printing,<br/>idea to <span class="grad">industry.</span></h1>
+          <p class="lead">How the technology works, materials, who makes and sells what, what things cost in India — and the business behind it, with a ₹20L Bangalore workshop as a worked example.</p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="#workshop">Explore the ₹20L blueprint</a>
-            <a class="btn btn--ghost" href="#learn">New to 3D? Start here</a>
+            <a class="btn btn--primary" href="#learn">Start learning</a>
+            <a class="btn btn--ghost" href="#industry">Explore the industry</a>
           </div>
         </div>
         <div class="hero__art reveal" aria-hidden="true">
@@ -121,7 +122,7 @@
               <p>A plastic wire (filament) is melted in a hot nozzle and drawn line by line, layer by layer — like a very precise hot-glue gun.</p>
               <ul class="tech__facts">
                 <li><span>Best for</span><b>Strong, functional &amp; large parts</b></li>
-                <li><span>Machines</span><b>Bambu P1S · X1C · H2D · K1 Max</b></li>
+                <li><span>Machines</span><b>Bambu A1 · P1S · H2D · Creality K1 Max</b></li>
                 <li><span>Material</span><b>Filament · ₹1–4 / g</b></li>
               </ul>
             </article>
@@ -294,6 +295,155 @@
       </section>
     </div>
 
+    <!-- ============================================================= INDUSTRY -->
+    <div class="learn-zone ind-zone" id="indZone">
+      <nav class="subnav" id="indSubnav" aria-label="Industry sections">
+        <div class="subnav__inner">
+          <span class="subnav__tag subnav__tag--ind">INDUSTRY</span>
+          <a href="#industry">Value chain</a>
+          <a href="#industry-models">Business &amp; careers</a>
+          <a href="#industry-prices">Printer prices</a>
+          <a href="#industry-filaments">Filament brands</a>
+          <a href="#industry-vendors">Who sells what</a>
+          <a href="#industry-import">Import calculator</a>
+        </div>
+      </nav>
+
+      <section class="section section--alt" id="industry">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">I·1</span>
+            <div>
+              <p class="eyebrow">Industry · how it works</p>
+              <h2>From polymer to customer</h2>
+              <p class="sub">Every print passes through a chain of companies. Click a stage to see who's in it in India and globally, and roughly how they make money.</p>
+            </div>
+          </header>
+          <div class="chain reveal">
+            <ol class="chain__rail" id="chainRail" role="tablist"></ol>
+            <div class="chain__panel" id="chainPanel" aria-live="polite"></div>
+          </div>
+
+          <div class="split split--wide">
+            <div class="reveal">
+              <h3 class="h3">Forty years of 3D printing</h3>
+              <ol class="history" id="history"></ol>
+            </div>
+            <div class="reveal">
+              <h3 class="h3">Who's who, globally</h3>
+              <div class="players" id="players"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="industry-models">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">I·2</span>
+            <div>
+              <p class="eyebrow">Industry · ways to earn</p>
+              <h2>Business models &amp; careers</h2>
+              <p class="sub">Six ways people make money from 3D printing, and the jobs the industry hires for in India. Figures are indicative.</p>
+            </div>
+          </header>
+          <div class="models reveal" id="models"></div>
+          <h3 class="h3 reveal">Careers in 3D printing</h3>
+          <div class="careers reveal" id="careers"></div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="industry-prices">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">I·3</span>
+            <div>
+              <p class="eyebrow">Industry · what it costs</p>
+              <h2>Printer prices in India</h2>
+              <p class="sub">From Indian reseller listings, Oct 2026, incl. GST unless noted. Tick up to three to compare side by side.</p>
+            </div>
+          </header>
+          <div class="toolbar reveal">
+            <div class="chips" id="prFilter"></div>
+            <label class="sort">Sort
+              <select id="prSort">
+                <option value="asc">Price: low → high</option>
+                <option value="desc">Price: high → low</option>
+                <option value="brand">Brand</option>
+              </select>
+            </label>
+          </div>
+          <div class="ptable reveal" id="prTable"></div>
+          <div class="compare reveal" id="prCompare" aria-live="polite"></div>
+          <p class="muted small reveal note">Bambu Lab X1 Carbon was discontinued on 31 March 2026; its successor X2D (US$649) had no Indian listing at the time of writing. Prices vary 5–10% between resellers — always compare GST invoices and warranty owner.</p>
+        </div>
+      </section>
+
+      <section class="section" id="industry-filaments">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">I·4</span>
+            <div>
+              <p class="eyebrow">Industry · consumables</p>
+              <h2>Filament brands &amp; where to buy</h2>
+              <p class="sub">Premium, mid-range and Indian-made brands — with typical prices per kg and the cheapest sensible way to buy each.</p>
+            </div>
+          </header>
+          <div class="tiers reveal" id="tierStrip"></div>
+          <div class="chips reveal" id="fbFilter"></div>
+          <div class="brands reveal" id="fbGrid"></div>
+          <div class="tips reveal" id="fbTips"></div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="industry-vendors">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">I·5</span>
+            <div>
+              <p class="eyebrow">Industry · distribution</p>
+              <h2>Who sells what in India</h2>
+              <p class="sub">Manufacturer → official distributor → authorised resellers → you. Buying outside the authorised chain often means no warranty.</p>
+            </div>
+          </header>
+          <div class="flowline reveal">
+            <span>Manufacturer</span><i></i><span>Official distributor</span><i></i><span>Authorised reseller</span><i></i><span>You</span>
+          </div>
+          <div class="vendors reveal" id="vendors"></div>
+        </div>
+      </section>
+
+      <section class="section" id="industry-import">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <span class="chapter">I·6</span>
+            <div>
+              <p class="eyebrow">Industry · imports</p>
+              <h2>Should you import filament from China?</h2>
+              <p class="sub">Change the assumptions and see the landed cost per kg against buying in India. Filament is HS code 3916: ~10% duty + 1% cess + 1.1% surcharge, plus 18% IGST (claimable if GST-registered).</p>
+            </div>
+          </header>
+          <div class="imp reveal">
+            <form class="calc__form imp__form" id="impForm" autocomplete="off">
+              <div class="seg field--range" role="radiogroup" aria-label="Import route">
+                <button type="button" data-m="air" class="is-on">Commercial · air</button>
+                <button type="button" data-m="sea">Commercial · sea</button>
+                <button type="button" data-m="parcel">Personal parcel</button>
+              </div>
+              <label class="field"><span>Factory price <output id="oUsd">$9.0 / kg</output></span><input type="range" id="iUsd" min="4" max="25" step="0.5" value="9" /></label>
+              <label class="field"><span>Exchange rate <output id="oFx">₹88 / $</output></span><input type="range" id="iFx" min="80" max="100" step="0.5" value="88" /></label>
+              <label class="field field--range"><span>Quantity <output id="oKg">100 kg</output></span><input type="range" id="iKg" min="1" max="2000" step="1" value="100" /></label>
+              <label class="field"><span>Freight <output id="oFr">₹300 / kg</output></span><input type="range" id="iFr" min="10" max="600" step="5" value="300" /></label>
+              <label class="field"><span>Clearing per shipment <output id="oClr">₹10,000</output></span><input type="range" id="iClr" min="0" max="30000" step="500" value="10000" /></label>
+              <label class="field field--range"><span>Indian price to beat (ex-GST) <output id="oLocal">₹1,100 / kg</output></span><input type="range" id="iLocal" min="600" max="2000" step="10" value="1100" /></label>
+            </form>
+            <div class="imp__out" id="impOut" aria-live="polite"></div>
+          </div>
+          <p class="callout reveal"><b>Bottom line:</b> small imports cost more than buying in India; only large sea shipments (~500 kg+) reach parity, with 4–8 weeks' lead time, MOQ, no warranty and batch-quality risk. AliExpress has been blocked in India since 2020, and personal parcels attract ~77% duty. Most shops are better off buying Chinese brands from Indian distributors.</p>
+        </div>
+      </section>
+    </div>
+
     <!-- WORKSHOP -->
     <section class="section" id="workshop">
       <div class="wrap">
@@ -449,7 +599,7 @@
             </div>
           </div>
         </div>
-        <p class="callout reveal"><b>Heads-up:</b> the cash dip exceeds the ₹1.45L contingency in the base case. Line up ₹3–5L working capital (Mudra / CGTMSE / overdraft) or hire the finishing technician from month 4. Full capex payback ≈ 20–24 months.</p>
+        <p class="callout reveal"><b>Heads-up:</b> the cash dip (~₹2.1L) still exceeds the ₹1.89L contingency in the base case. Line up ₹3–5L working capital (Mudra / CGTMSE / overdraft) or hire the finishing technician from month 4. Full capex payback ≈ 20–24 months.</p>
       </div>
     </section>
 
@@ -637,6 +787,7 @@
   </footer>
 
   <script src="learn.js"></script>
+  <script src="industry.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

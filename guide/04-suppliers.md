@@ -15,7 +15,8 @@
 
 | Product | Supplier | Notes |
 |---|---|---|
-| **Bambu Lab** (X1C, P1S, H2D, H2C) | **WOL3D** — wol3d.com | Official distributor, 11+ experience centres, AMC & training |
+| **Bambu Lab** (A1, P1S, P2S, H2S, H2D, H2C) | **WOL3D** — wol3d.com | Official distributor, 11+ experience centres, AMC & training |
+| | **KSP Electronics** — kspelectronics.in | Reseller with published prices & GST invoices |
 | | **Robu.in** | Authorised Bambu distributor; genuine spares & AMS units |
 | | Full dealer list | bambulab.com/en-in/where-to-buy |
 | **Creality** (K1 Max) | **WOL3D** | Exclusive Creality distributor (K1 Max seen at ~₹72k) |

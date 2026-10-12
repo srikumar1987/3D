@@ -9,6 +9,9 @@
 > [!NOTE]
 > All prices are indicative landed costs in India **including 18% GST** (Oct 2026). Always take 2–3 GST-invoiced quotes. If GST-registered, you can reclaim roughly **₹2.5–3L** as Input Tax Credit.
 
+> [!IMPORTANT]
+> **Price update (Oct 2026):** printer prices re-checked against Indian reseller listings. Bambu P1S Combo is **₹69,999** (not ₹95k), the **X1 Carbon was discontinued on 31 Mar 2026** (replaced here by the **H2S, ₹1,54,999**), and the Saturn 4 Ultra 16K is **₹59,999–61,499**. The ₹0.44L saved moves into contingency. See the full [printer price directory](09-industry.md#printer-prices-in-india).
+
 ---
 
 ## Budget at a glance
@@ -16,8 +19,8 @@
 ```mermaid
 pie showData
     title Capex split (₹ lakh)
-    "FDM printers" : 4.35
-    "Resin printers" : 1.60
+    "FDM printers" : 3.67
+    "Resin printers" : 1.84
     "3D scanner" : 1.40
     "Design PCs & IT" : 3.85
     "Software (Y1)" : 1.30
@@ -26,13 +29,13 @@ pie showData
     "Post-processing & QC" : 0.75
     "Starting materials" : 1.40
     "Premises & registration" : 1.40
-    "Contingency" : 1.45
+    "Contingency" : 1.89
 ```
 
 | # | Category | ₹ Lakh |
 |:-:|---|--:|
-| 1 | FDM printers (4) | **4.35** |
-| 2 | Resin printers + wash/cure (3 + 2) | **1.60** |
+| 1 | FDM printers (4) | **3.67** |
+| 2 | Resin printers + wash/cure (3 + 2) | **1.84** |
 | 3 | 3D scanner | **1.40** |
 | 4 | Design PCs, NAS, networking | **3.85** |
 | 5 | Software (year 1) | **1.30** |
@@ -41,32 +44,32 @@ pie showData
 | 8 | Post-processing & QC tools | **0.75** |
 | 9 | Starting materials & spares | **1.40** |
 | 10 | Premises deposit & registrations | **1.40** |
-| | **Subtotal** | **18.55** |
-| | Contingency (~7%) | 1.45 |
+| | **Subtotal** | **18.11** |
+| | Contingency (~9.5%) | 1.89 |
 | | **Total** | **20.00** |
 
 ---
 
-## 1 · FDM printers — ₹4.35L
+## 1 · FDM printers — ₹3.67L
 
 | Qty | Model | Role | Unit | Total |
 |:-:|---|---|--:|--:|
-| 1 | **Bambu Lab X1 Carbon Combo** (or current H2-series) | Engineering materials (CF-nylon, ASA, PC), multi-colour, best precision | 1.70 | 1.70 |
-| 2 | **Bambu Lab P1S Combo** (or P2S successor) | Production workhorses — PLA, PETG, ABS, multi-colour | 0.95 | 1.90 |
-| 1 | **Creality K1 Max** (300 mm³) | Large parts, enclosures, cosplay, architecture | 0.75 | 0.75 |
+| 1 | **Bambu Lab H2S** (replaces the discontinued X1C) | Engineering materials (ABS, ASA, PA-CF, PC) — 65 °C heated chamber, 350 °C hotend | 1.55 | 1.55 |
+| 2 | **Bambu Lab P1S Combo** (P2S Combo ₹1.03L is the newer option) | Production workhorses — PLA, PETG, ABS, multi-colour | 0.70 | 1.40 |
+| 1 | **Creality K1 Max** (300 mm³) | Large parts, enclosures, cosplay, architecture | 0.72 | 0.72 |
 
 > [!TIP]
 > All four are enclosed CoreXY machines — one technician can run them, and Bambu's farm manager lets you queue and monitor from one screen. Expected capacity: **~1,700 machine-hours/month** at 60% utilisation.
 
-## 2 · Resin (MSLA) printers — ₹1.60L
+## 2 · Resin (MSLA) printers — ₹1.84L
 
 | Qty | Model | Role | Unit | Total |
 |:-:|---|---|--:|--:|
-| 2 | **Elegoo Saturn 4 Ultra 16K** | Miniatures, product models, dental & jewellery masters | 0.48 | 0.96 |
+| 2 | **Elegoo Saturn 4 Ultra 16K** | Miniatures, product models, dental & jewellery masters | 0.60 | 1.20 |
 | 1 | **Elegoo Mars 5 Ultra** | Small, high-detail jobs, test prints | 0.22 | 0.22 |
 | 2 | **Wash & cure stations** (Mercury Plus / Anycubic W&C 3 Plus) | Post-processing | 0.21 | 0.42 |
 
-**Upgrade path (month 6–12):** Formlabs Form 4 (~₹5–7L package) for certified dental/medical resins and industrial-grade clients.
+**Upgrade path (month 6–12):** Formlabs Form 4 (~₹6.25L + GST for the printer; packages more) for certified dental/medical resins and industrial-grade clients.
 
 ## 3 · 3D scanner — ₹1.40L
 
@@ -190,9 +193,9 @@ block-beta
 ```mermaid
 timeline
     title Upgrade path
-    Month 6-9   : Formlabs Form 4 (₹5–7L)
+    Month 6-9   : Formlabs Form 4 (~₹6.25L + GST)
                 : QuickSurface licence (₹1.5L/yr)
-    Month 9-12  : Bambu H2D (~₹2.5–3L)
+    Month 9-12  : Bambu H2D (from ₹2.2L)
     Month 12-18 : Industrial scanner – EinScan HX class (₹10L+)
     Month 18+   : SLS – Formlabs Fuse 1+ class (₹35–45L)
 ```

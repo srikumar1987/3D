@@ -27,7 +27,7 @@ flowchart LR
 | 1 | **Bambu Lab H2C** — up to 7 swappable nozzles | ![](https://img.shields.io/badge/-LOWEST-3DDC97?style=flat-square) | Bambu's tests: **~47–58% of the X1C's purge waste** |
 | 2 | **Bambu Lab H2D** — 2 independent nozzles | ![](https://img.shields.io/badge/-VERY_LOW-3DDC97?style=flat-square) | Model + support on separate nozzles → no purge; PLA + PVA prints that waste 20–40 g on an X1C waste almost nothing |
 | 3 | **Resin printers** (Saturn 4 Ultra) | ![](https://img.shields.io/badge/-LOW-7CD992?style=flat-square) | Only supports & failures; leftover resin goes back in the bottle |
-| 4 | Single-nozzle FDM (P1S / X1C) — **one colour** | ![](https://img.shields.io/badge/-LOW-7CD992?style=flat-square) | Mostly supports & failures |
+| 4 | Single-nozzle FDM (A1 / P1S / P2S) — **one colour** | ![](https://img.shields.io/badge/-LOW-7CD992?style=flat-square) | Mostly supports & failures |
 | 5 | Single-nozzle FDM + **AMS, many colours** | ![](https://img.shields.io/badge/-HIGH-FF5C5C?style=flat-square) | 1–2 g+ per colour change; can exceed the model's own weight |
 
 ### Cut waste on any printer
@@ -47,17 +47,18 @@ flowchart LR
 
 | Your focus | Start with | Why |
 |---|---|---|
-| General business — gifts, décor, corporate, toys | **Bambu Lab P1S / P2S Combo** | Reliable, easy, multi-colour, handles TPU when fed directly |
-| Heavy multi-colour, low waste, slippers | **Bambu Lab H2D** | Big volume, dual nozzle, heated chamber |
-| Rings, jewellery, figurines | **Elegoo Saturn 4 Ultra 16K** + wash & cure | Fine detail on a budget |
-| **Best starter combo** | **1 × P1S/P2S Combo + 1 × Saturn 4 Ultra** | Covers ~90% of products for **~₹1.5–1.7L** |
+| Tight budget / learning | **Bambu Lab A1 Mini (₹21,499) or A1 (₹31,999)** | Cheapest reliable way in; PLA, PETG, TPU |
+| General business — gifts, décor, corporate, toys | **Bambu Lab P1S Combo (₹69,999)** / P2S Combo (₹1,02,999) | Reliable, easy, multi-colour, handles TPU when fed directly |
+| Heavy multi-colour, low waste, slippers | **Bambu Lab H2D (from ₹2,19,999)** | Big volume, dual nozzle, heated chamber |
+| Rings, jewellery, figurines | **Elegoo Saturn 4 Ultra 16K (₹59,999–61,499)** + wash & cure | Fine detail on a budget |
+| **Best starter combo** | **1 × P1S/P2S Combo + 1 × Saturn 4 Ultra** | Covers ~90% of products for **~₹1.5L** (₹69,999 + ~₹80k) |
 
 ```mermaid
 flowchart TD
     Q{What will you<br/>mostly sell?} -->|Gifts, décor, corporate| P[P1S / P2S Combo]
     Q -->|Many colours / slippers| H[H2D]
     Q -->|Jewellery, figurines| R[Saturn 4 Ultra 16K]
-    Q -->|Not sure yet| C[P1S + Saturn 4 Ultra<br/>~₹1.5–1.7L]
+    Q -->|Not sure yet| C[P1S Combo + Saturn 4 Ultra<br/>~₹1.5L]
     style C fill:#FF6B1A,stroke:#FF6B1A,color:#fff
 ```
 

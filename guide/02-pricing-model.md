@@ -13,12 +13,12 @@
 
 ## A · What a machine-hour costs you
 
-| Cost item | FDM (P1S / K1 Max) | FDM (X1C) | Resin (Saturn 4 Ultra) |
+| Cost item | FDM (P1S / K1 Max) | FDM (H2S) | Resin (Saturn 4 Ultra) |
 |---|--:|--:|--:|
-| Depreciation (3 yrs, ~4,000 productive h/yr) | ₹8 | ₹14 | ₹4 |
+| Depreciation (3 yrs, ~4,000 productive h/yr) | ₹6 | ₹13 | ₹5 |
 | Maintenance & spares | ₹3 | ₹4 | ₹6 |
 | Electricity (~₹10/unit) | ₹2 | ₹2.5 | ₹1 |
-| **Machine cost / hour** | **~₹13** | **~₹20** | **~₹11** |
+| **Machine cost / hour** | **~₹11** | **~₹19** | **~₹12** |
 
 ## B · Material — your cost vs. what you charge (2× markup)
 
@@ -60,7 +60,7 @@ Price = (Material × rate) + (Print hours × machine rate) + (Labour hours × la
 | Service | Rate |
 |---|---|
 | FDM machine time (P1S, K1 Max) | ₹60 / hr |
-| FDM engineering (X1C — CF, nylon, PC) | ₹90 / hr |
+| FDM engineering (H2S — CF, nylon, PC) | ₹90 / hr |
 | Resin machine time (per plate, split across parts) | ₹80 / hr |
 | Technician (setup, support removal) | ₹400 / hr |
 | Finishing (sanding, priming, painting) | ₹500 / hr |
@@ -90,7 +90,7 @@ Price = (Material × rate) + (Print hours × machine rate) + (Labour hours × la
 | **Price (ex-GST)** | **1,029** |
 | With GST | 1,214 |
 
-Real cost ≈ ₹480 → **~53% gross margin**
+Real cost ≈ ₹460 → **~55% gross margin**
 
 </td>
 <td width="50%" valign="top">

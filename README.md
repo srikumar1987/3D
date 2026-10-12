@@ -3,15 +3,16 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Budget-₹20_Lakh-FF6B1A?style=for-the-badge&labelColor=0B0D12" alt="Budget"/>
-  <img src="https://img.shields.io/badge/India_3DP_CAGR-~22%25-22D3EE?style=for-the-badge&labelColor=0B0D12" alt="CAGR"/>
-  <img src="https://img.shields.io/badge/Base-Bengaluru-B26BFF?style=for-the-badge&labelColor=0B0D12" alt="Bengaluru"/>
-  <img src="https://img.shields.io/badge/Break--even-~Month_8-3DDC97?style=for-the-badge&labelColor=0B0D12" alt="Break-even"/>
+  <img src="https://img.shields.io/badge/Learn-Free_&_open-22D3EE?style=for-the-badge&labelColor=0B0D12" alt="Free"/>
+  <img src="https://img.shields.io/badge/India_3DP_CAGR-~22%25-FF6B1A?style=for-the-badge&labelColor=0B0D12" alt="CAGR"/>
+  <img src="https://img.shields.io/badge/Prices-Oct_2026-B26BFF?style=for-the-badge&labelColor=0B0D12" alt="Prices"/>
+  <img src="https://img.shields.io/badge/Worked_example-₹20L_workshop-3DDC97?style=for-the-badge&labelColor=0B0D12" alt="Worked example"/>
 </p>
 
 <p align="center">
-  <b>A visual field guide to the 3D printing industry</b> — what to buy, what to charge,<br/>
-  what sells, who to buy from, and how AI fits in. Written for a Bangalore-based workshop.
+  <b>Learn the 3D printing industry — layer by layer.</b><br/>
+  How the technology works, materials, who makes and sells what, what things cost in India,<br/>
+  and the business behind it — with a ₹20L Bangalore workshop as a worked example.
 </p>
 
 <p align="center">
@@ -19,16 +20,29 @@
   &nbsp;·&nbsp;
   <a href="guide/00-learn-basics.md">Learn the basics</a>
   &nbsp;·&nbsp;
+  <a href="guide/09-industry.md">Industry & prices</a>
+  &nbsp;·&nbsp;
   <a href="#chapters">Chapters</a>
   &nbsp;·&nbsp;
   <a href="#at-a-glance">At a glance</a>
-  &nbsp;·&nbsp;
-  <a href="#90-day-launch">90-day launch</a>
 </p>
 
 <p align="center"><img src="assets/divider.svg" width="100%"/></p>
 
-## The journey
+## How to use this guide
+
+```mermaid
+flowchart LR
+    L["00 · Learn<br/><sub>FDM, resin, materials,<br/>glossary, fixes</sub>"] --> I["09 · Industry<br/><sub>vendors, prices,<br/>imports, careers</sub>"]
+    I --> B["01–04 · Business<br/><sub>workshop, pricing,<br/>break-even, suppliers</sub>"]
+    B --> M["05–08 · Market & tools<br/><sub>what sells, printers,<br/>software, AI</sub>"]
+    style L fill:#22D3EE,stroke:#22D3EE,color:#000
+    style I fill:#B26BFF,stroke:#B26BFF,color:#fff
+    style B fill:#FF6B1A,stroke:#FF6B1A,color:#fff
+    style M fill:#3DDC97,stroke:#3DDC97,color:#000
+```
+
+## The journey of a print
 
 ```mermaid
 flowchart LR
@@ -36,7 +50,7 @@ flowchart LR
     S0[Scan<br/><sub>MetroX</sub>] --> D
     D --> SL[Slice<br/><sub>Bambu Studio · Lychee</sub>]
     SL --> P{Print}
-    P -->|FDM| F[P1S · X1C · K1 Max]
+    P -->|FDM| F[P1S · H2S · K1 Max]
     P -->|Resin| R[Saturn 4 Ultra]
     F --> PP[Post-process<br/><sub>sand · paint · QC</sub>]
     R --> PP
@@ -52,7 +66,8 @@ flowchart LR
 
 <table>
   <tr>
-    <td colspan="2" align="center"><a href="guide/00-learn-basics.md"><img src="assets/cards/00.svg" alt="00 Learn the basics" width="50%"/></a><br/><sub><b>New to 3D printing? Start with chapter 00.</b></sub></td>
+    <td><a href="guide/00-learn-basics.md"><img src="assets/cards/00.svg" alt="00 Learn the basics" width="100%"/></a></td>
+    <td><a href="guide/09-industry.md"><img src="assets/cards/09.svg" alt="09 Industry and prices" width="100%"/></a></td>
   </tr>
   <tr>
     <td><a href="guide/01-workshop-setup.md"><img src="assets/cards/01.svg" alt="01 Workshop setup" width="100%"/></a></td>
@@ -78,22 +93,39 @@ flowchart LR
 
 ## At a glance
 
+### Printer prices in India (Oct 2026, incl. GST)
+
+| Printer | Type | Price | Good for |
+|---|---|--:|---|
+| Bambu Lab A1 Mini | FDM | ₹21,499 | First printer, students |
+| Bambu Lab A1 | FDM | ₹31,999 | Best-value beginner |
+| Bambu Lab P1S Combo | FDM, enclosed, multi-colour | ₹69,999 | Small-business workhorse |
+| Bambu Lab P2S Combo | FDM, enclosed, multi-colour | ₹1,02,999 | Newer P1S replacement |
+| Bambu Lab H2S | FDM, heated chamber | ₹1,54,999 | Engineering materials |
+| Bambu Lab H2D | FDM, dual nozzle | from ₹2,19,999 | Multi-material, low waste |
+| Creality K1 Max | FDM, 300 mm | ₹71,999 | Large parts |
+| Elegoo Saturn 4 Ultra 16K | Resin | ₹59,999–61,499 | Miniatures, jewellery |
+| Prusa CORE One | FDM, enclosed | ₹1.70–2.10L | Open-source, repairable |
+| Formlabs Form 4 | Professional resin | ~₹6.25L + GST | Dental, industrial |
+
+More in **[09 · Industry](guide/09-industry.md)** — vendors, filament brands, import costs, careers.
+
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Where the ₹20L goes
+### Worked example — where ₹20L goes
 
 ```mermaid
 pie
-    "FDM printers" : 4.35
+    "FDM printers" : 3.67
     "PCs & IT" : 3.85
+    "Resin + scanner" : 3.24
     "Fit-out + power" : 2.50
-    "Resin + scanner" : 3.00
     "Materials + tools" : 2.15
     "Software" : 1.30
     "Premises" : 1.40
-    "Contingency" : 1.45
+    "Contingency" : 1.89
 ```
 
 </td>
@@ -116,12 +148,15 @@ pie
 </tr>
 </table>
 
-### What will sell (next 2 years)
+### Is importing filament from China worth it?
 
-| | Tier 1 — focus | Tier 2 — add-ons | Tier 3 — niche / risky |
+| | Personal parcel | Commercial import (100 kg, air) | Commercial import (500 kg+, sea) |
 |---|---|---|---|
-| **Products** | Corporate gifting · personalised gifts · B2B prototyping & jigs · jewellery masters · fashion earrings | Original toys · painted miniatures · home décor · cosplay · festival items | Slippers · phone cases · licensed characters |
-| **Material** | PLA · PETG · castable resin | PLA multi-colour · ABS-like resin | TPU 85A · TPU 95A |
+| Duty | ~77% (not claimable) | ~12.1% + 18% IGST (claimable) | ~12.1% + 18% IGST (claimable) |
+| Landed PLA (est.) | — | ~₹1,270–1,420 / kg | ~₹940–970 / kg |
+| vs buying in India | Much worse | **Worse** | **About equal**, with more risk |
+
+> Buy Chinese brands (eSUN, SUNLU, Elegoo, Polymaker) from Indian distributors, plus Indian makers (Numakers, FibReel, Vektor3D) for value PLA. Try the **import calculator** on the site.
 
 <details>
 <summary><b>Quote formula (click to expand)</b></summary>
@@ -144,18 +179,15 @@ Price = (Material × rate) + (Print hours × machine rate) + (Labour hours × la
 
 | Item | Why | ~Cost |
 |---|---|--:|
-| Bambu Lab P1S / P2S Combo | Reliable, multi-colour, TPU-capable | ₹0.95L |
-| Elegoo Saturn 4 Ultra 16K + wash/cure | Jewellery, figurines, fine detail | ₹0.7L |
+| Bambu Lab P1S Combo | Reliable, multi-colour, TPU-capable | ₹69,999 |
+| Elegoo Saturn 4 Ultra 16K + wash/cure | Jewellery, figurines, fine detail | ~₹80,000 |
 | Tinkercad → Fusion + Blender | Learn → function → art | Free to start |
-| Meshy (AI) | Photo → figurine | Paid plan for commercial use |
 
 </details>
 
 <p align="center"><img src="assets/divider.svg" width="100%"/></p>
 
-<a id="90-day-launch"></a>
-
-## 90-day launch
+## Worked example — 90-day launch
 
 ```mermaid
 gantt
@@ -182,18 +214,19 @@ gantt
 ```
 3D/
 ├── README.md                 ← you are here
-├── guide/                    ← 00 Learn the basics + 8 deep-dive chapters
+├── guide/                    ← 00 Learn · 01–08 business & market · 09 Industry
 ├── docs/                     ← interactive website (GitHub Pages)
 │   ├── index.html
 │   ├── styles.css
 │   ├── learn.js              ← Learn section (explorer, glossary, quizzes)
-│   └── app.js
+│   ├── industry.js           ← Industry section (directories, import calculator)
+│   └── app.js                ← workshop, pricing, break-even, market
 ├── assets/                   ← hero, divider, chapter cards (SVG)
 └── tools/gen_cards.py        ← regenerates chapter cards
 ```
 
 > [!NOTE]
-> Prices are indicative (India, Oct 2026, incl. GST) and change often. Market tiers are professional judgement — validate with test listings before scaling. Supplier contacts come from public websites; confirm on written quotes.
+> Prices are indicative (India, Oct 2026, incl. GST unless stated) from public reseller listings and change often. Market tiers, margins and salary ranges are estimates for learning — verify before making decisions. Supplier contacts come from public websites; confirm on written quotes.
 
 <p align="center">
   <img src="assets/divider.svg" width="100%"/><br/>

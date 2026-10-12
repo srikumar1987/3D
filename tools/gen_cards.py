@@ -24,6 +24,8 @@ ICONS = {
     "nozzle": '<rect x="-22" y="-34" width="44" height="30" rx="6" fill="none" stroke="{c}" stroke-width="3"/>'
               '<path d="M-10 -4 H10 L4 12 H-4 Z" fill="{c}"/><path d="M-30 30 H30" stroke="{c}" stroke-width="3"/>'
               '<path d="M-22 24 H22" stroke="{c}" stroke-width="3" opacity="0.6"/>',
+    "globe": '<circle r="34" fill="none" stroke="{c}" stroke-width="3"/><ellipse rx="14" ry="34" fill="none" stroke="{c}" stroke-width="2.5"/>'
+             '<path d="M-34 0 H34 M-29 -17 H29 M-29 17 H29" stroke="{c}" stroke-width="2"/>',
     "book": '<path d="M0 -26 C-12 -34 -26 -34 -36 -28 V30 C-26 24 -12 24 0 32 C12 24 26 24 36 30 V-28 C26 -34 12 -34 0 -26 Z" fill="none" stroke="{c}" stroke-width="3" stroke-linejoin="round"/>'
             '<path d="M0 -26 V32" stroke="{c}" stroke-width="3"/><path d="M-26 -14 H-10 M-26 -2 H-10 M10 -14 H26 M10 -2 H26" stroke="{c}" stroke-width="2.5" stroke-linecap="round"/>',
     "spark": '<path d="M0 -36 C4 -10 10 -4 36 0 C10 4 4 10 0 36 C-4 10 -10 4 -36 0 C-10 -4 -4 -10 0 -36 Z" fill="{c}"/>'
@@ -39,6 +41,7 @@ CARDS = [
     ("05", "Filaments & Market", "What sells next 2 years", "Material → product → demand", "spool", "#FF3D7F", "#B26BFF"),
     ("06", "Slippers", "Soft TPU footwear", "Feasible · premium niche", "foot", "#B26BFF", "#7C9CFF"),
     ("07", "Printers & Waste", "Least waste · best start", "H2C · H2D · P1S · Saturn", "nozzle", "#7C9CFF", "#22D3EE"),
+    ("09", "Industry & Prices", "Vendors · imports · careers", "Who makes, sells, and earns", "globe", "#B26BFF", "#22D3EE"),
     ("08", "Software & AI", "Design without limits", "Fusion · Blender · Meshy", "spark", "#3DDC97", "#FFC145"),
 ]
 
