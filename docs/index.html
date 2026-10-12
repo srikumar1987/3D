@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Printing — From Idea to Industry · Bengaluru Field Guide</title>
+  <meta name="description" content="A visual field guide to starting a 3D printing business in Bangalore: ₹20L workshop, pricing, break-even, suppliers, filaments, market outlook and AI." />
+  <meta property="og:title" content="3D Printing — From Idea to Industry" />
+  <meta property="og:description" content="₹20L workshop blueprint, pricing calculator, break-even, suppliers and market outlook for India." />
+  <meta name="theme-color" content="#0B0D12" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B0D12'/%3E%3Cpath d='M8 24h16M10 20h12M12 16h8' stroke='%23FF6B1A' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M13 6h6v5l-3 3-3-3z' fill='%2322D3EE'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="print-progress" aria-hidden="true">
+    <div class="print-progress__bar" id="progressBar"></div>
+    <span class="print-progress__label" id="progressLabel">Printing… 0%</span>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand__mark"><i></i><i></i><i></i></span>
+      <span>3D<b>/</b>Field&nbsp;Guide</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#workshop">Workshop</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#profit">Profit</a>
+      <a href="#market">Market</a>
+      <a href="#suppliers">Suppliers</a>
+      <a href="#start">Start</a>
+      <a href="#ai">AI</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Field guide · Bengaluru · India</p>
+          <h1>From idea<br/>to <span class="grad">industry.</span></h1>
+          <p class="lead">Everything you need to build a 3D printing business — what to buy, what to charge, what sells, who to buy from, and where AI fits in.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#workshop">Explore the ₹20L blueprint</a>
+            <a class="btn btn--ghost" href="#pricing">Try the quote calculator</a>
+          </div>
+        </div>
+        <div class="hero__art reveal" aria-hidden="true">
+          <div class="printer">
+            <div class="printer__frame">
+              <div class="printer__rail"></div>
+              <div class="printer__head"><div class="printer__nozzle"></div></div>
+              <div class="printer__object">
+                <div class="printer__layers"><span>3D</span></div>
+              </div>
+              <div class="printer__bed"></div>
+            </div>
+            <div class="printer__spool"></div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap stats reveal">
+        <div class="stat"><b data-count="20" data-prefix="₹" data-suffix="L">₹20L</b><span>Total budget</span></div>
+        <div class="stat"><b data-count="22.5" data-suffix="%" data-decimals="1">22.5%</b><span>India 3DP CAGR to 2030</span></div>
+        <div class="stat"><b data-count="34.8" data-suffix="%" data-decimals="1">34.8%</b><span>South India market share</span></div>
+        <div class="stat"><b data-count="8" data-prefix="M">M8</b><span>Cumulative cash-positive</span></div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <ol class="journey reveal" id="journey"></ol>
+      </div>
+    </section>
+
+    <!-- WORKSHOP -->
+    <section class="section" id="workshop">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">01</span>
+          <div>
+            <p class="eyebrow">The blueprint</p>
+            <h2>The ₹20 lakh workshop</h2>
+            <p class="sub">A service bureau for prototyping, small batches, reverse engineering, miniatures and display models. Prices are landed in India incl. 18% GST.</p>
+          </div>
+        </header>
+
+        <div class="budget reveal">
+          <div class="donut-wrap">
+            <div class="donut" id="donut"></div>
+            <div class="donut-center-overlay"><b id="donutValue">₹20.0L</b><span id="donutLabel">Total budget</span></div>
+          </div>
+          <ul class="legend" id="legend"></ul>
+        </div>
+
+        <h3 class="h3 reveal">Machines &amp; tools</h3>
+        <div class="tabs reveal" role="tablist" id="equipTabs"></div>
+        <div class="equip reveal" id="equipGrid"></div>
+
+        <div class="split">
+          <div class="reveal">
+            <h3 class="h3">Floor plan · ~600 sq ft</h3>
+            <p class="muted">Peenya · Bommasandra · Electronic City · Whitefield EPIP — ~₹35–45/sq ft → ~₹24k/month.</p>
+            <div class="floor" id="floor"></div>
+          </div>
+          <div class="reveal">
+            <h3 class="h3">The team · ₹80k–1.0L/month</h3>
+            <div class="team" id="team"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section--alt" id="pricing">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">02</span>
+          <div>
+            <p class="eyebrow">Quote like a pro</p>
+            <h2>Live pricing calculator</h2>
+            <p class="sub">Material × 2 markup + machine time + labour, a 10% failure buffer, optional rush — minimum ₹500, then GST.</p>
+          </div>
+        </header>
+
+        <div class="calc reveal">
+          <form class="calc__form" id="calcForm" autocomplete="off">
+            <label class="field">
+              <span>Material</span>
+              <select id="cMaterial"></select>
+            </label>
+            <label class="field">
+              <span>Machine</span>
+              <select id="cMachine"></select>
+            </label>
+            <label class="field field--range">
+              <span>Material used <output id="oQty">150 g</output></span>
+              <input type="range" id="cQty" min="5" max="1500" step="5" value="150" />
+            </label>
+            <label class="field field--range">
+              <span>Print time <output id="oHours">6 h</output></span>
+              <input type="range" id="cHours" min="0.5" max="48" step="0.5" value="6" />
+            </label>
+            <label class="field field--range">
+              <span>Labour <output id="oLabour">0.5 h</output></span>
+              <input type="range" id="cLabour" min="0" max="8" step="0.25" value="0.5" />
+            </label>
+            <label class="field">
+              <span>Labour type</span>
+              <select id="cLabourType">
+                <option value="400">Technician · ₹400/h</option>
+                <option value="500">Finishing · ₹500/h</option>
+                <option value="1200">CAD design · ₹1,200/h</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Quantity</span>
+              <input type="number" id="cUnits" min="1" max="1000" value="1" />
+            </label>
+            <label class="switch">
+              <input type="checkbox" id="cRush" />
+              <span class="switch__ui"></span>
+              <span>Rush 24 h <em>+40%</em></span>
+            </label>
+          </form>
+
+          <div class="receipt" id="receipt" aria-live="polite">
+            <div class="receipt__head">
+              <span>QUOTE</span><span id="rId">#3D-0001</span>
+            </div>
+            <ul class="receipt__lines" id="rLines"></ul>
+            <div class="receipt__total">
+              <span>Total incl. GST</span>
+              <b id="rTotal">₹0</b>
+            </div>
+            <div class="receipt__meta">
+              <div><span>Per unit</span><b id="rUnit">₹0</b></div>
+              <div><span>Your cost</span><b id="rCost">₹0</b></div>
+              <div><span>Gross margin</span><b id="rMargin">0%</b></div>
+            </div>
+            <div class="health" id="rHealth"></div>
+          </div>
+        </div>
+
+        <div class="ratecard reveal" id="ratecard"></div>
+      </div>
+    </section>
+
+    <!-- PROFIT -->
+    <section class="section" id="profit">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">03</span>
+          <div>
+            <p class="eyebrow">When money comes back</p>
+            <h2>Break-even, visualised</h2>
+            <p class="sub">Fixed cash burn ~₹1.6L/month, contribution margin ~70%. Drag the sliders to stress-test the plan.</p>
+          </div>
+        </header>
+
+        <div class="be reveal">
+          <div class="be__controls">
+            <label class="field field--range">
+              <span>Monthly fixed cost <output id="oFixed">₹1.60L</output></span>
+              <input type="range" id="bFixed" min="1" max="3" step="0.05" value="1.6" />
+            </label>
+            <label class="field field--range">
+              <span>Contribution margin <output id="oMargin">70%</output></span>
+              <input type="range" id="bMargin" min="40" max="85" step="1" value="70" />
+            </label>
+            <label class="field field--range">
+              <span>Sales ramp speed <output id="oGrowth">100%</output></span>
+              <input type="range" id="bGrowth" min="50" max="150" step="5" value="100" />
+            </label>
+            <div class="kpis">
+              <div class="kpi"><span>Break-even revenue</span><b id="kBe">₹2.29L</b></div>
+              <div class="kpi"><span>% of capacity (₹5.3L)</span><b id="kCap">43%</b></div>
+              <div class="kpi"><span>Deepest cash dip</span><b id="kDip">−₹2.1L</b></div>
+              <div class="kpi"><span>Cumulative positive</span><b id="kPos">Month 8</b></div>
+            </div>
+          </div>
+          <div class="chart">
+            <svg id="beChart" viewBox="0 0 640 360" role="img" aria-label="Revenue and cumulative cash chart"></svg>
+            <div class="chart__legend">
+              <span><i class="sw sw--bar"></i>Revenue</span>
+              <span><i class="sw sw--be"></i>Break-even</span>
+              <span><i class="sw sw--cum"></i>Cumulative cash</span>
+            </div>
+          </div>
+        </div>
+        <p class="callout reveal"><b>Heads-up:</b> the cash dip exceeds the ₹1.45L contingency in the base case. Line up ₹3–5L working capital (Mudra / CGTMSE / overdraft) or hire the finishing technician from month 4. Full capex payback ≈ 20–24 months.</p>
+      </div>
+    </section>
+
+    <!-- WASTE -->
+    <section class="section section--alt" id="waste">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">04</span>
+          <div>
+            <p class="eyebrow">Less purge, more profit</p>
+            <h2>Which printers waste the least?</h2>
+            <p class="sub">Colour-change purge is the biggest source of filament waste — then supports, failed prints and spool leftovers.</p>
+          </div>
+        </header>
+        <div class="waste reveal" id="wasteList"></div>
+        <div class="tips reveal" id="wasteTips"></div>
+      </div>
+    </section>
+
+    <!-- MARKET -->
+    <section class="section" id="market">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">05</span>
+          <div>
+            <p class="eyebrow">What sells next</p>
+            <h2>Materials, products &amp; the 2-year outlook</h2>
+            <p class="sub">Hover or tap a card to flip it. Tiers are professional judgement — validate with 4–6 weeks of test listings.</p>
+          </div>
+        </header>
+        <div class="chips reveal" id="tierChips"></div>
+        <div class="products reveal" id="products"></div>
+
+        <div class="split split--wide">
+          <div class="reveal">
+            <h3 class="h3">Demand vs margin</h3>
+            <svg class="quad" id="quad" viewBox="0 0 520 420" role="img" aria-label="Demand versus margin quadrant"></svg>
+          </div>
+          <div class="reveal">
+            <h3 class="h3">The macro picture</h3>
+            <div class="macro">
+              <div class="macro__item"><b>$276M → $763M</b><span>India 3D printing 2025 → 2030 · ~22.5% CAGR (MarketsandMarkets)</span></div>
+              <div class="macro__item"><b>34.8%</b><span>South India share · Bengaluru called India's “AM capital” (IMARC)</span></div>
+              <div class="macro__item"><b>35.2%</b><span>FDM's share of technology mix (IMARC)</span></div>
+              <div class="macro__item"><b>Lead with B2B</b><span>Most growth is industrial — consumer products are the second engine.</span></div>
+            </div>
+            <p class="callout callout--danger"><b>Avoid licensed characters.</b> Marvel, DC, Disney and Chhota Bheem are protected IP. Sell originals, generic mythology, or photo-based “mini-me” figurines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIPPERS -->
+    <section class="section section--alt" id="slippers">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">06</span>
+          <div>
+            <p class="eyebrow">Soft TPU footwear</p>
+            <h2>Can we print comfortable slippers?</h2>
+            <p class="sub"><b>Yes — as a premium niche, not a mass product.</b></p>
+          </div>
+        </header>
+        <div class="hardness reveal">
+          <div class="hardness__scale"><span>Softer</span><span>Harder</span></div>
+          <div class="hardness__bar">
+            <div class="hmark" style="--x:12%"><b>Foaming 80A</b><span>EVA / Croc feel · ~₹12,700 per 800 g</span></div>
+            <div class="hmark" style="--x:42%"><b>TPU 85A</b><span>Most recommended · direct drive</span></div>
+            <div class="hmark" style="--x:88%"><b>TPU 95A</b><span>Too hard · outsoles only</span></div>
+          </div>
+        </div>
+        <div class="slip reveal">
+          <div class="slip__card">
+            <h4>Print recipe</h4>
+            <ul class="kv" id="slipRecipe"></ul>
+          </div>
+          <div class="slip__card">
+            <h4>Economics per pair</h4>
+            <ul class="kv" id="slipEcon"></ul>
+          </div>
+          <div class="slip__card slip__card--accent">
+            <h4>Where it wins</h4>
+            <ul class="ticks">
+              <li>Custom-fit from a foot scan</li>
+              <li>Kids' fun designs</li>
+              <li>Gifts &amp; fashion statements</li>
+            </ul>
+            <p class="muted small">No medical / orthotic claims without a podiatrist. Start with 5 test pairs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPLIERS -->
+    <section class="section" id="suppliers">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">07</span>
+          <div>
+            <p class="eyebrow">Who to buy from</p>
+            <h2>Supplier directory</h2>
+            <p class="sub">From public websites (Oct 2026). Buy from authorised channels — warranty usually needs their invoice.</p>
+          </div>
+        </header>
+        <div class="toolbar reveal">
+          <input class="search" id="supSearch" type="search" placeholder="Search Bambu, TPU, Bengaluru…" aria-label="Search suppliers" />
+          <div class="chips" id="supChips"></div>
+        </div>
+        <div class="suppliers reveal" id="supGrid"></div>
+
+        <h3 class="h3 reveal">Filament price ranges · ₹/kg</h3>
+        <div class="prices reveal" id="priceBars"></div>
+      </div>
+    </section>
+
+    <!-- START -->
+    <section class="section section--alt" id="start">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">08</span>
+          <div>
+            <p class="eyebrow">Your first machine</p>
+            <h2>Which printer should you start with?</h2>
+            <p class="sub">Pick what you'll mostly sell.</p>
+          </div>
+        </header>
+        <div class="chooser reveal">
+          <div class="chooser__opts" id="chooserOpts" role="tablist"></div>
+          <div class="chooser__result" id="chooserResult" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section class="section" id="ai">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">09</span>
+          <div>
+            <p class="eyebrow">Design without limits</p>
+            <h2>Software &amp; AI</h2>
+            <p class="sub">Tinkercad to learn, Fusion for function, Blender for art — and AI for figurines.</p>
+          </div>
+        </header>
+        <div class="stack reveal" id="stack"></div>
+
+        <div class="pipeline reveal">
+          <h3 class="h3">Business idea · Photo → Figurine</h3>
+          <ol class="pipe" id="pipe"></ol>
+        </div>
+
+        <div class="ai-grid reveal" id="aiGrid"></div>
+        <p class="callout reveal"><b>AI caveats:</b> free plans often forbid commercial use · AI-generated “Spider-Man” is still infringement · expect clean-up of thin walls and scale. Many free models on MakerWorld / Printables are non-commercial — check licences.</p>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section section--alt" id="roadmap">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="chapter">10</span>
+          <div>
+            <p class="eyebrow">Grow from revenue</p>
+            <h2>Phase 2 roadmap</h2>
+          </div>
+        </header>
+        <ol class="timeline reveal" id="timeline"></ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a class="brand" href="#top"><span class="brand__mark"><i></i><i></i><i></i></span><span>3D<b>/</b>Field&nbsp;Guide</span></a>
+        <p class="muted small">Prices indicative (India, Oct 2026, incl. GST). Market tiers are professional judgement. Supplier details from public sources — confirm on written quotes.</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://github.com/srikumar1987/3D">GitHub repo</a>
+        <a href="https://github.com/srikumar1987/3D/tree/main/guide">Deep-dive chapters</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+    <p class="footer__sig">Built layer by layer · Bengaluru</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

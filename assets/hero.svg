@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="3D Printing — From Idea to Industry">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0D12"/>
+      <stop offset="1" stop-color="#161B2B"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FF6B1A"/>
+      <stop offset="0.55" stop-color="#FF3D7F"/>
+      <stop offset="1" stop-color="#B26BFF"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#7C9CFF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#FF6B1A" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FF6B1A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <pattern id="layers" width="8" height="7" patternUnits="userSpaceOnUse">
+      <rect width="8" height="5.4" fill="#fff"/>
+    </pattern>
+    <mask id="layerMask">
+      <rect width="1200" height="420" fill="url(#layers)"/>
+    </mask>
+    <clipPath id="reveal">
+      <rect x="0" y="330" width="1200" height="0">
+        <animate attributeName="y" values="330;70;70;330" keyTimes="0;0.7;0.92;1" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="height" values="0;260;260;0" keyTimes="0;0.7;0.92;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#grid)"/>
+  <rect width="1200" height="420" fill="url(#glow)"/>
+
+  <!-- print bed -->
+  <rect x="70" y="332" width="420" height="8" rx="4" fill="#2A3147"/>
+  <rect x="70" y="332" width="420" height="2" rx="1" fill="#3B4563"/>
+
+  <!-- ghost outline -->
+  <text x="280" y="325" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Inter,Arial,sans-serif" font-weight="800" font-size="300" letter-spacing="-12" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2">3D</text>
+
+  <!-- layered print -->
+  <g clip-path="url(#reveal)">
+    <text x="280" y="325" text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Inter,Arial,sans-serif" font-weight="800" font-size="300" letter-spacing="-12" fill="url(#hot)" mask="url(#layerMask)">3D</text>
+  </g>
+
+  <!-- nozzle -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,260;0,0;0,0;0,260" keyTimes="0;0.7;0.92;1" dur="7s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="110,0;430,0;110,0" dur="0.9s" repeatCount="indefinite"/>
+      <rect x="-22" y="14" width="44" height="34" rx="6" fill="#E6E9F2"/>
+      <rect x="-22" y="14" width="44" height="8" rx="4" fill="#FFFFFF"/>
+      <path d="M-10 48 H10 L4 62 H-4 Z" fill="#C9A227"/>
+      <circle cx="0" cy="66" r="3" fill="#FFB36B">
+        <animate attributeName="opacity" values="1;0.3;1" dur="0.45s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="-2" y="-20" width="4" height="34" fill="#22D3EE" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- copy -->
+  <g font-family="'Space Grotesk','Segoe UI',Inter,Arial,sans-serif">
+    <text x="600" y="120" fill="#22D3EE" font-size="16" font-weight="600" letter-spacing="5">FIELD GUIDE · BANGALORE · INDIA</text>
+    <text x="600" y="190" fill="#F5F7FB" font-size="62" font-weight="700" letter-spacing="-1.5">From Idea</text>
+    <text x="600" y="258" fill="#F5F7FB" font-size="62" font-weight="700" letter-spacing="-1.5">to <tspan fill="url(#hot)">Industry.</tspan></text>
+    <text x="602" y="300" fill="#A7B0C5" font-size="19" font-family="Inter,'Segoe UI',Arial,sans-serif">Building a 3D printing business, layer by layer.</text>
+  </g>
+
+  <!-- chips -->
+  <g font-family="Inter,'Segoe UI',Arial,sans-serif" font-size="14" font-weight="600">
+    <rect x="600" y="328" width="132" height="32" rx="16" fill="#FF6B1A" fill-opacity="0.14" stroke="#FF6B1A" stroke-opacity="0.6"/>
+    <text x="666" y="349" text-anchor="middle" fill="#FFB38A">₹20L Workshop</text>
+    <rect x="744" y="328" width="118" height="32" rx="16" fill="#22D3EE" fill-opacity="0.12" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <text x="803" y="349" text-anchor="middle" fill="#8BE9F7">FDM + Resin</text>
+    <rect x="874" y="328" width="138" height="32" rx="16" fill="#B26BFF" fill-opacity="0.14" stroke="#B26BFF" stroke-opacity="0.6"/>
+    <text x="943" y="349" text-anchor="middle" fill="#D6B5FF">Pricing · Profit</text>
+    <rect x="1024" y="328" width="104" height="32" rx="16" fill="#3DDC97" fill-opacity="0.12" stroke="#3DDC97" stroke-opacity="0.6"/>
+    <text x="1076" y="349" text-anchor="middle" fill="#9FF0CB">AI-ready</text>
+  </g>
+
+  <!-- layer lines footer -->
+  <g opacity="0.5">
+    <rect x="0" y="404" width="1200" height="2" fill="url(#cyan)"/>
+    <rect x="0" y="410" width="1200" height="2" fill="url(#hot)"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF6B1A" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#FF6B1A"/>
+      <stop offset="0.5" stop-color="#FF3D7F"/>
+      <stop offset="0.8" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="8" width="1200" height="2" fill="url(#g)" opacity="0.35"/>
+  <rect x="0" y="14" width="1200" height="2" fill="url(#g)" opacity="0.2"/>
+  <rect x="0" y="8" width="160" height="2" fill="url(#g)">
+    <animate attributeName="x" values="-160;1200" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="0" cy="9" r="3" fill="#FFB36B">
+    <animate attributeName="cx" values="0;1360" dur="4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
